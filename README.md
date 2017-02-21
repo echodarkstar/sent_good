@@ -1,1 +1,4 @@
 # sent_good
+I wanted to compare how a person's sentiment and their star rating differ. Often, I find reviews are sarcastic and use words with negative connotations even in a positive review. This repo uses review data from Goodreads as the test data when a user enters a book title, and the model is trained on a large movie review dataset [ http://ai.stanford.edu/~amaas/data/sentiment/ ]. 
+The output is present in the form of a csv where the failure in the Bag Of Words model is apparent. For most reviews, ratings greater than 3 track a sentiment of 1 (which represents a positive review). But there are more than the acceptable amount of discrepancies. 
+Note:There are two .py files. One of them is a spider (good.py) which is called by main.py via a subprocess call. Make sure you have scrapy installed on your system, and create a spider called "good" in the project directory. 
